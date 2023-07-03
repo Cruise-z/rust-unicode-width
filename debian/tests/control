@@ -1,0 +1,29 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test unicode-width 0.1.10 --all-targets --all-features
+Features: test-name=rust-unicode-width:@
+Depends: dh-cargo (>= 18), cargo (>> 0.57.0-5), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test unicode-width 0.1.10 --all-targets --no-default-features --features bench
+Features: test-name=librust-unicode-width-dev:bench
+Depends: dh-cargo (>= 18), cargo (>> 0.57.0-5), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test unicode-width 0.1.10 --all-targets 
+Features: test-name=librust-unicode-width-dev:default
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test unicode-width 0.1.10 --all-targets --no-default-features --features no_std
+Features: test-name=librust-unicode-width-dev:no_std
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test unicode-width 0.1.10 --all-targets --no-default-features
+Features: test-name=librust-unicode-width-dev:
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test unicode-width 0.1.10 --all-targets --no-default-features --features compiler_builtins
+Features: test-name=librust-unicode-width+compiler-builtins-dev:compiler_builtins
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable

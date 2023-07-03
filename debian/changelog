@@ -1,5 +1,77 @@
-template-repository (1.0-1) unstable; urgency=medium
+rust-unicode-width (0.1.10-1) unstable; urgency=medium
 
-  * Initial release
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * This is a packaged version suitable for the Deepin23 
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Cruise.zrz <Cruise.zrz@gmail.com>  Mon, 03 Jul 2023 14:11:03 +0800
+
+rust-unicode-width (0.1.10-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package unicode-width 0.1.10 from crates.io using debcargo 2.5.0
+
+ -- Fabian Gruenbichler <debian@fabian.gruenbichler.email>  Sat, 22 Oct 2022 09:31:49 -0400
+
+rust-unicode-width (0.1.9-3) unstable; urgency=medium
+
+  * Team upload.
+  * Package unicode-width 0.1.9 from crates.io using debcargo 2.5.0
+  * Add test dependency on cargo (>> 0.57.0-5) for bench feature,
+    the current version of the cargo package has an issue which prevents
+    cargo-auto-test from working with features whose name matches
+    a subcommand.
+
+ -- Peter Michael Green <plugwash@debian.org>  Tue, 15 Mar 2022 15:27:54 +0000
+
+rust-unicode-width (0.1.9-2) unstable; urgency=medium
+
+  * Team upload.
+  * Source upload
+  * Package unicode-width 0.1.9 from crates.io using debcargo 2.5.0
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Thu, 10 Mar 2022 00:13:00 +0100
+
+rust-unicode-width (0.1.9-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package unicode-width 0.1.9 from crates.io using debcargo 2.5.0
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Wed, 09 Mar 2022 23:50:21 +0100
+
+rust-unicode-width (0.1.7-2.1) unstable; urgency=medium
+
+  * Team upload.
+  * Use a NMU style version number to avoid conflicting with
+    version in experimental.
+  * Package unicode-width 0.1.7 from crates.io using debcargo 2.4.2
+  * Mark test for "core" featureset as broken.
+
+ -- Peter Michael Green <plugwash@debian.org>  Mon, 13 Apr 2020 15:59:22 +0000
+
+rust-unicode-width (0.1.7-2) unstable; urgency=medium
+
+  * Team upload.
+  * Package unicode-width 0.1.7 from crates.io using debcargo 2.4.2
+  * Drop std and rustc-dep-of-std featuresets, they are not currently
+    installable in Debian.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sun, 12 Apr 2020 20:20:15 +0000
+
+rust-unicode-width (0.1.7-1) unstable; urgency=medium
+
+  * Package unicode-width 0.1.7 from crates.io using debcargo 2.4.0
+
+ -- Ximin Luo <infinity0@debian.org>  Tue, 24 Dec 2019 14:06:43 +0000
+
+rust-unicode-width (0.1.6-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package unicode-width 0.1.6 from crates.io using debcargo 2.4.0
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Sun, 01 Dec 2019 11:01:35 +0100
+
+rust-unicode-width (0.1.5-1) unstable; urgency=medium
+
+  * Package unicode-width 0.1.5 from crates.io using debcargo 2.1.2
+
+ -- Ximin Luo <infinity0@debian.org>  Thu, 05 Jul 2018 02:31:42 -0700
